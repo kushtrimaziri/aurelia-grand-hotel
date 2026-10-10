@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Aurelia Grand Hotel — Luxury rooms, exceptional service, and unforgettable stays.">
+
+    <title>Aurelia Grand Hotel | Luxury Stay</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                Aurelia
+                <span>GRAND HOTEL</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#booking" class="nav-button">Book Your Stay</a>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero -->
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">WELCOME TO AURELIA</p>
+
+                <h1>
+                    A Stay Beyond
+                    <span>Expectations.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Experience timeless luxury, exceptional comfort,
+                    and unforgettable moments in the heart of the city.
+                </p>
+
+                <div class="hero-live-info">
+                    <span class="live-dot"></span>
+                    <span>Open 24/7</span>
+                    <span class="hero-divider"></span>
+                    <span>Florence</span>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#rooms" class="btn btn-primary">
+                        Explore Rooms
+                    </a>
+
+                    <a href="#about" class="btn btn-secondary">
+                        Discover Aurelia
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about" class="about section">
+
+            <div class="section-container">
+
+                <div class="about-image">
+                    <img
+                        src="images/hotel-about.jpg"
+                        alt="Elegant interior of Aurelia Grand Hotel"
+                    >
+                </div>
+
+                <div class="about-content">
+
+                    <p class="section-label">THE AURELIA EXPERIENCE</p>
+
+                    <h2>
+                        Where elegance
+                        feels like home.
+                    </h2>
+
+                    <p>
+                        Aurelia Grand Hotel combines timeless architecture,
+                        modern comfort, and thoughtful hospitality to create
+                        an experience that feels both luxurious and welcoming.
+                    </p>
+
+                    <p>
+                        Whether you're travelling for business, celebrating
+                        a special occasion, or simply escaping everyday life,
+                        every detail is designed around your stay.
+                    </p>
+
+                    <div class="about-stats">
+                        <div><strong data-count="25">0</strong><span>Years of hospitality</span></div>
+                        <div><strong data-count="48">0</strong><span>Luxury rooms</span></div>
+                        <div><strong data-count="24">0</strong><span>Hour concierge</span></div>
+                    </div>
+
+                    <a href="#rooms" class="text-link">
+                        Explore our rooms →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Rooms -->
+        <section id="rooms" class="rooms section">
+
+            <div class="section-heading">
+
+                <p class="section-label">STAY WITH US</p>
+
+                <h2>Rooms & Suites</h2>
+
+                <p>
+                    Designed for comfort. Crafted for unforgettable stays.
+                </p>
+
+            </div>
+
+            <div class="rooms-grid">
+
+                <!-- Room 1 -->
+                <article class="room-card">
+
+                    <div class="room-image">
+                        <img
+                            src="images/deluxe-room.jpg"
+                            alt="Elegant deluxe hotel room"
+                        >
+                    </div>
+
+                    <div class="room-content">
+
+                        <p class="room-type">DELUXE</p>
+
+                        <h3>Deluxe Room</h3>
+
+                        <p>
+                            A refined room with a king-size bed,
+                            elegant furnishings, and city views.
+                        </p>
+                        <div class="room-features"><span>King Bed</span><span>City View</span><span>Wi-Fi</span></div>
+
+                        <div class="room-footer">
+
+                            <span class="price">
+                                €140 <small>/ night</small>
+                            </span>
+
+                            <button
+                                class="room-book-btn"
+                                data-room="Deluxe Room"
+                            >
+                                Book
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Room 2 -->
+                <article class="room-card">
+
+                    <div class="room-image">
+                        <img
+                            src="images/executive-room.jpg"
+                            alt="Modern executive hotel room"
+                        >
+                    </div>
+
+                    <div class="room-content">
+
+                        <p class="room-type">EXECUTIVE</p>
+
+                        <h3>Executive Room</h3>
+
+                        <p>
+                            Spacious accommodation with premium
+                            amenities and a relaxing lounge area.
+                        </p>
+                        <div class="room-features"><span>Lounge</span><span>Breakfast</span><span>Wi-Fi</span></div>
+
+                        <div class="room-footer">
+
+                            <span class="price">
+                                €190 <small>/ night</small>
+                            </span>
+
+                            <button
+                                class="room-book-btn"
+                                data-room="Executive Room"
+                            >
+                                Book
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Room 3 -->
+                <article class="room-card">
+
+                    <div class="room-image">
+                        <img
+                            src="images/presidential-suite.jpg"
+                            alt="Luxurious presidential hotel suite"
+                        >
+                    </div>
+
+                    <div class="room-content">
+
+                        <p class="room-type">SIGNATURE</p>
+
+                        <h3>Presidential Suite</h3>
+
+                        <p>
+                            Our most exclusive suite with separate living
+                            space, premium furnishings, and panoramic views.
+                        </p>
+                        <div class="room-features"><span>Living Room</span><span>Panorama</span><span>Butler</span></div>
+
+                        <div class="room-footer">
+
+                            <span class="price">
+                                €350 <small>/ night</small>
+                            </span>
+
+                            <button
+                                class="room-book-btn"
+                                data-room="Presidential Suite"
+                            >
+                                Book
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Amenities -->
+        <section id="amenities" class="amenities section">
+
+            <div class="section-heading">
+
+                <p class="section-label">HOTEL AMENITIES</p>
+
+                <h2>Everything you need.</h2>
+
+            </div>
+
+            <div class="amenities-grid">
+
+                <div class="amenity">
+                    <div class="amenity-icon">✦</div>
+                    <h3>Luxury Spa</h3>
+                    <p>
+                        Relax and recharge with our full-service spa.
+                    </p>
+                </div>
+
+                <div class="amenity">
+                    <div class="amenity-icon">♨</div>
+                    <h3>Infinity Pool</h3>
+                    <p>
+                        Enjoy stunning views from our rooftop pool.
+                    </p>
+                </div>
+
+                <div class="amenity">
+                    <div class="amenity-icon">◆</div>
+                    <h3>Fine Dining</h3>
+                    <p>
+                        Discover exceptional cuisine prepared by our chefs.
+                    </p>
+                </div>
+
+                <div class="amenity">
+                    <div class="amenity-icon">◈</div>
+                    <h3>Fitness Center</h3>
+                    <p>
+                        Stay active with our fully equipped fitness center.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Gallery -->
+        <section id="gallery" class="gallery section">
+
+            <div class="section-heading">
+
+                <p class="section-label">DISCOVER AURELIA</p>
+
+                <h2>A glimpse of your stay.</h2>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <img class="gallery-item"
+                    src="images/gallery-1.jpg"
+                    alt="Aurelia Grand Hotel exterior"
+                >
+
+                <img class="gallery-item"
+                    src="images/gallery-2.jpg"
+                    alt="Luxury hotel bedroom"
+                >
+
+                <img class="gallery-item"
+                    src="images/gallery-3.jpg"
+                    alt="Luxury hotel swimming pool"
+                >
+
+                <img class="gallery-item"
+                    src="images/gallery-4.jpg"
+                    alt="Elegant hotel restaurant"
+                >
+
+                <img class="gallery-item"
+                    src="images/gallery-5.jpg"
+                    alt="Modern hotel lounge"
+                >
+
+                <img class="gallery-item"
+                    src="images/gallery-6.jpg"
+                    alt="Luxury hotel interior"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- Testimonials -->
+        <section class="testimonials section">
+
+            <div class="section-heading">
+
+                <p class="section-label">GUEST EXPERIENCES</p>
+
+                <h2>What our guests say.</h2>
+
+            </div>
+
+            <div class="testimonial-container">
+
+                <button
+                    class="testimonial-btn prev"
+                    aria-label="Previous testimonial"
+                >
+                    ←
+                </button>
+
+                <div class="testimonial">
+
+                    <p class="testimonial-text">
+                        “From the moment we arrived, everything felt
+                        effortless. Beautiful rooms, incredible service,
+                        and an unforgettable stay.”
+                    </p>
+
+                    <p class="testimonial-author">
+                        — Sofia M.
+                    </p>
+
+                </div>
+
+                <button
+                    class="testimonial-btn next"
+                    aria-label="Next testimonial"
+                >
+                    →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Booking -->
+        <section id="booking" class="booking section">
+
+            <div class="booking-container">
+
+                <div class="booking-heading">
+
+                    <p class="section-label">PLAN YOUR STAY</p>
+
+                    <h2>Reserve your room.</h2>
+
+                    <p>
+                        Choose your dates and let us take care
+                        of the rest.
+                    </p>
+
+                </div>
+
+                <form id="page-booking-form" class="booking-form" novalidate>
+
+                    <div class="form-group">
+
+                        <label for="page-guest-name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="page-guest-name"
+                            name="guest-name"
+                            placeholder="Your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="page-guest-email">Email</label>
+
+                        <input
+                            type="email"
+                            id="page-guest-email"
+                            name="guest-email"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="page-check-in">Check-in</label>
+
+                            <input
+                                type="date"
+                                id="page-check-in"
+                                name="check-in"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="page-check-out">Check-out</label>
+
+                            <input
+                                type="date"
+                                id="page-check-out"
+                                name="check-out"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="page-guests">Guests</label>
+
+                            <select id="page-guests" name="guests" required>
+
+                                <option value="">Select guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5+ Guests</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="page-room-type">Room</label>
+
+                            <select id="page-room-type" name="room-type" required>
+
+                                <option value="">Select room</option>
+                                <option value="Deluxe Room">Deluxe Room</option>
+                                <option value="Executive Room">Executive Room</option>
+                                <option value="Presidential Suite">
+                                    Presidential Suite
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">
+                        Request Reservation
+                    </button>
+
+                    <p
+                        id="page-booking-message"
+                        class="booking-message"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FAQ -->
+        <section id="faq" class="faq section">
+            <div class="section-heading">
+                <p class="section-label">FREQUENTLY ASKED</p>
+                <h2>Questions, answered.</h2>
+                <p>Everything you need to know before arriving at Aurelia.</p>
+            </div>
+            <div class="faq-list">
+                <button class="faq-item" type="button">
+                    <span>What time is check-in and check-out?</span><span class="faq-plus">+</span>
+                    <div class="faq-answer">Check-in begins at 15:00 and check-out is at 11:00. Early check-in and late check-out can be requested subject to availability.</div>
+                </button>
+                <button class="faq-item" type="button">
+                    <span>Is breakfast included?</span><span class="faq-plus">+</span>
+                    <div class="faq-answer">Breakfast is available daily in our restaurant. Package inclusions can vary by room and reservation.</div>
+                </button>
+                <button class="faq-item" type="button">
+                    <span>Can I request a special occasion setup?</span><span class="faq-plus">+</span>
+                    <div class="faq-answer">Yes. Contact our concierge before arrival and we can discuss flowers, dining arrangements, and other celebration details.</div>
+                </button>
+                <button class="faq-item" type="button">
+                    <span>Does the hotel have parking?</span><span class="faq-plus">+</span>
+                    <div class="faq-answer">Parking assistance is available through the concierge. Please contact the hotel in advance for current arrangements.</div>
+                </button>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact section">
+
+            <div class="contact-container">
+
+                <div>
+
+                    <p class="section-label">GET IN TOUCH</p>
+
+                    <h2>We'd love to welcome you.</h2>
+
+                </div>
+
+                <div class="contact-details">
+
+                    <p>
+                        <strong>Address</strong><br>
+                        18 Aurelia Boulevard<br>
+                        Florence, Italy
+                    </p>
+
+                    <p>
+                        <strong>Phone</strong><br>
+                        +39 055 123 4567
+                    </p>
+
+                    <p>
+                        <strong>Email</strong><br>
+                        hello@aureliagrand.com
+                    </p>
+                    <p class="local-time"><strong>Local time</strong><br><span id="florence-time">--:--:--</span></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    Aurelia
+                    <span>GRAND HOTEL</span>
+                </a>
+
+                <p>
+                    Timeless luxury. Exceptional hospitality.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Aurelia Grand Hotel. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <button
+        id="back-to-top"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
+
+    <!-- Booking Modal -->
+<div class="booking-modal" id="booking-modal">
+    <div class="booking-modal-content">
+
+        <button class="booking-close" id="booking-close" aria-label="Close booking form">
+            &times;
+        </button>
+
+        <div class="booking-header">
+            <span>BOOK YOUR STAY</span>
+            <h2>Reserve your room.</h2>
+            <p>Complete the details below and we'll prepare your stay.</p>
+        </div>
+
+        <form id="booking-form">
+
+            <div class="booking-row">
+                <div class="form-group">
+                    <label for="check-in">Check-in</label>
+                    <input type="date" id="check-in" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="check-out">Check-out</label>
+                    <input type="date" id="check-out" required>
+                </div>
+            </div>
+
+            <div class="booking-row">
+                <div class="form-group">
+                    <label for="guests">Guests</label>
+                    <select id="guests" required>
+                        <option value="1">1 Guest</option>
+                        <option value="2" selected>2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="room-type">Room</label>
+                    <select id="room-type" required>
+                        <option value="Deluxe Room">Deluxe Room</option>
+                        <option value="Executive Room">Executive Room</option>
+                        <option value="Presidential Suite">Presidential Suite</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="guest-name">Full Name</label>
+                <input
+                    type="text"
+                    id="guest-name"
+                    placeholder="Your full name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="guest-email">Email Address</label>
+                <input
+                    type="email"
+                    id="guest-email"
+                    placeholder="you@example.com"
+                    required
+                >
+            </div>
+
+            <div class="booking-summary" aria-live="polite">
+                <div><span>Estimated stay</span><strong id="booking-nights">0 nights</strong></div>
+                <div><span>Estimated total</span><strong id="booking-total">€0</strong></div>
+            </div>
+
+            <button type="submit" class="booking-submit">
+                Request Reservation
+            </button>
+
+            <p class="booking-message" id="booking-message"></p>
+
+        </form>
+    </div>
+</div>
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close gallery">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">&#8592;</button>
+        <img id="lightbox-image" src="" alt="Expanded gallery image">
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">&#8594;</button>
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
